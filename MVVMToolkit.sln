@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMToolkit", "MVVMToolkit\MVVMToolkit.csproj", "{8A89C375-47B4-4B31-B4FD-28034ADCE15E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMToolkit", "MVVMToolkit\MVVMToolkit.csproj", "{7EAC5E79-DDA5-4F57-AC7E-E43158730EC4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8A89C375-47B4-4B31-B4FD-28034ADCE15E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8A89C375-47B4-4B31-B4FD-28034ADCE15E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8A89C375-47B4-4B31-B4FD-28034ADCE15E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8A89C375-47B4-4B31-B4FD-28034ADCE15E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EAC5E79-DDA5-4F57-AC7E-E43158730EC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EAC5E79-DDA5-4F57-AC7E-E43158730EC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EAC5E79-DDA5-4F57-AC7E-E43158730EC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EAC5E79-DDA5-4F57-AC7E-E43158730EC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

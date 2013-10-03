@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Input;
 
-namespace RegexRename
+namespace MVVMToolkit
 {
     #region ICommandSink
 
@@ -145,5 +145,5 @@ namespace RegexRename
         #endregion // CommandCallbacks [nested struct]
     }
 
-    #endregion // CommandSink    
+    #endregion // CommandSink
 }

@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Input;
 
-namespace RegexRename
+namespace MVVMToolkit
 {
     /// <summary>
     /// Courtesy of Josh Smith: http://goo.gl/CAxntd
@@ -36,18 +36,18 @@ namespace RegexRename
                 _commandSink = value;
 
                 base.CanExecute += (s, e) =>
-                    {
-                        bool handled;
-                        e.CanExecute = _commandSink.CanExecuteCommand(e.Command, e.Parameter, out handled);
-                        e.Handled = handled;
-                    };
+                {
+                    bool handled;
+                    e.CanExecute = _commandSink.CanExecuteCommand(e.Command, e.Parameter, out handled);
+                    e.Handled = handled;
+                };
 
                 base.Executed += (s, e) =>
-                    {
-                        bool handled;
-                        _commandSink.ExecuteCommand(e.Command, e.Parameter, out handled);
-                        e.Handled = handled;
-                    };
+                {
+                    bool handled;
+                    _commandSink.ExecuteCommand(e.Command, e.Parameter, out handled);
+                    e.Handled = handled;
+                };
             }
         }
 
