@@ -9,20 +9,9 @@ using System.Windows.Input;
 
 namespace MVVMToolkit
 {
-    public abstract class BaseViewModel : INotifyPropertyChanged, ICommandSink
+    public abstract class BaseViewModel : ObservableObject, ICommandSink
     {
         private CommandSink _sink = new CommandSink();
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected void OnPropertyChanged([CallerMemberName] string propertyName = "")
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-            }
-
-        }
 
         public bool CanExecuteCommand(ICommand command, object parameter, out bool handled)
         {
@@ -39,7 +28,6 @@ namespace MVVMToolkit
             _sink.RegisterCommand(command, canExecute, execute);
         }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         protected void UnregisterCommand(ICommand command)
         {
             _sink.UnregisterCommand(command);
